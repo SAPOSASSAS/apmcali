@@ -1,0 +1,30 @@
+$(document).ready(function(){
+  $('.modal').modal();
+
+  $('.tooltipped').tooltip();
+
+  $('.sidenav').sidenav();
+
+  $('.btn-fixed').click(function(){
+    $('body, html').animate({
+       scrollTop: '0px'
+    }, 400);
+  });
+
+  $(window).scroll(function(){
+    var windowHeight = $(document).height();
+    var medio = windowHeight/3;
+
+    if( $(this).scrollTop() > medio){
+      $('.btn-fixed').slideDown(300);
+    } else {
+      $('.btn-fixed').attr('display','block');
+      $('.btn-fixed').slideUp(300);
+    }
+  });
+
+
+  
+
+  
+});

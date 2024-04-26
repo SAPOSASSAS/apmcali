@@ -1,0 +1,59 @@
+/*descargar lista de precios*/
+var descargar_lista = function(){
+    var route = "/descarga";	
+    var token = $("meta[name = 'csrf-token']").attr("content");
+
+    $.ajax({
+        url: route,
+        headers: {"X-CSRF-TOKEN": token},
+        type: "get",
+        xhrFields: {
+			responseType: 'blob'
+		},
+        //dataType: "file",
+        success: function(data){
+        	var a = document.createElement('a');
+			var url = window.URL.createObjectURL(data);
+			 a.href = url;
+			a.download = 'listado.xlsx';
+			document.body.append(a);
+			a.click();
+			a.remove();
+			 window.URL.revokeObjectURL(url);
+        	},
+        error: function(data){
+        	alert("error");
+        },
+    })
+}
+
+/*verificar contraseña para descargar lista de precios*/
+$("#verificar").on("click",function(){
+
+    var route = "/verificar";	
+    var token = $("meta[name = 'csrf-token']").attr("content");
+    var password = $("#password").val();
+
+    var dataString = "password="+ password;
+
+    $.ajax({
+        url: route,
+        headers: {"X-CSRF-TOKEN": token},
+        type: "post",
+        data: dataString,
+        dataType: "json",
+        success: function(data){
+        	if(data.success == "correcto"){
+        		$('.modal').modal('close');
+        		$('#password').val("");
+			    descargar_lista();
+        	}else{
+        		$('#password').val("");
+        	}	
+        },
+        error: function(data){
+        	alert("error de proceso");
+        },
+     })
+
+});

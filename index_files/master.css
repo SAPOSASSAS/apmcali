@@ -1,0 +1,61 @@
+/*color del boton del catalogo*/
+.btn-large{
+  background-color: #203171 !important;
+}
+.img_slide{
+  margin-top: 10px;
+}
+body{
+  background: #e2e2e2;
+}
+
+
+/*tamaño y color del nav*/
+nav{
+  background: #232222 !important;
+  height: 97px  !important;
+/*background: #203170 !important; */   
+}
+/*altura de las opciones del nav*/
+#nav-mobile{
+  margin-top: 1em;
+}
+.img_slide {
+  margin-top: 2em;
+}
+
+
+.footer-copyright{
+  background: #232222 !important;
+}
+.page-footer{
+  background: #3d3c3c !important;
+}
+.card-contactenos{
+  border-radius: 1em;
+}
+.btn-enviar{
+  margin-bottom: 1em;
+}
+.sidenav{
+  background: #232222 !important;
+}
+.btn-fixed{
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  display: none;
+  background-color:/*#7D99FF*/#82B34F !important;
+  border-radius: 20px !important;
+  z-index: 9999999;
+}
+.donde{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.modal-footer{
+  background: #e2e2e2;
+}
+p{
+  font-size: 1.2rem;
+}

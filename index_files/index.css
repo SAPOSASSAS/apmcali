@@ -1,0 +1,98 @@
+
+	/*/*monitor
+  	@media only screen and (min-width: 992px) {
+  		.div_button_catalogue{
+	  		position: absolute;
+	  		bottom:2em;
+	  	}
+	}
+	/*tablet
+	@media only screen and (min-width: 600px) and (max-width: 991px) {
+		.div_button_catalogue{
+	  		position: absolute;
+	  		bottom:2em;
+	  		left: 40%;
+	  	}
+	}
+	/*celuco
+	@media only screen and (min-width: 30px) and (max-width: 599px) {
+		.div_button_catalogue{
+	  		position: absolute;
+	  		bottom:2em;
+	  		left: 32%;
+	  	}
+	}*/
+/*acomodar botones centrar*/
+.div_button_catalogue{
+	position: absolute;
+	bottom:2em;
+}
+
+/*tamaño del primer parallax*/
+.primera{
+    height: 90%;
+}
+
+
+/*cards de promocion*/
+.promotion{
+  	margin-top: 3em;
+  	margin-bottom: 3em;
+}
+.promotion i {
+	margin: 40px 0;
+	color: #203171;
+	font-size: 7rem;
+	display: block;
+}
+.promo-caption {
+	font-size: 1.7rem;
+	font-weight: 500;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+
+/*distancia*/
+.card-nosotros {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+.catalogo-marcas {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+
+/*subraya*/
+.divisor{
+	height: 2px;
+	background-color: #203171;
+}
+
+/*card de promocion*/
+
+	#div_promotion{
+		max-height: 400px;
+		margin-top: 2em;
+		overflow-y: auto; 
+		border-radius: 10px;
+	}
+
+	p.promotion_title{
+		font-family: 'promotion_title';
+		font-size: 70;
+		text-align: center;
+		padding-top: 0px;
+		color: yellow;
+		margin-block-start: 0em !important;
+		margin-block-end: 0em !important;
+	}
+	p.promotion_info{
+		color: yellow;
+		font-family: 'promotion_info';
+		font-size: 20;
+		text-align: center;
+	}
+
+/*******************/
